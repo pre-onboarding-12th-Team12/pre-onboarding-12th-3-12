@@ -1,4 +1,4 @@
-# **Week 2**
+# **Week 3**
 
 동료학습을 통해서 팀에서 생각한 Todolist(선발과제)의 Best Pratice를 만들고 제출해주세요
 
@@ -67,9 +67,10 @@
 
 ## 🔗 배포 링크
 
-https://github-issues-12.netlify.app/
+https://www.naver.com/
 
-![image](https://github.com/FRONTENDSCHOOL5/final-15-Tripillow/assets/88657261/d982b0f8-2f8c-46a8-92ae-cf3284bd6510)
+![image](https://github.com/pre-onboarding-12th-Team12/pre-onboarding-12th-2-12/assets/107299502/83a1b323-0752-469b-abc8-ea119ab43b3c)
+
 
 <br>
 
@@ -231,9 +232,9 @@ project-root/
 
 <br>
 
-### Assignment 1 
-- 요구사항1
-- 요구사항2
+### Assignment 1
+-요구사항1
+-요구사항2 
 
 | <div style="width:100px">이름</div> | 의견 |
 | :---: | --- |
@@ -245,15 +246,15 @@ project-root/
 
 **👑 Best Practice**
 
-- bestPractice
+-bestPracticeExample
+
+
 
 <br>
 
 ### Assignment 2
-- 요구사항1
-- 요구사항2
-
-
+-요구사항1
+-요구사항2 
 
 | <div style="width:100px">이름</div> | 의견 |
 | :---: | --- |
@@ -265,13 +266,15 @@ project-root/
 
 **👑 Best Practice**
 
-- bestPractice
+-bestPracticeExample
+
+
 
 <br>
 
-### Assignment 3 
-- 요구사항1
-- 요구사항2
+### Assignment 3
+-요구사항1
+-요구사항2 
 
 | <div style="width:100px">이름</div> | 의견 |
 | :---: | --- |
@@ -283,13 +286,14 @@ project-root/
 
 **👑 Best Practice**
 
-- bestPractice
+-bestPracticeExample
+
 
 <br>
 
-### Assignment 4 
-- 요구사항1
-- 요구사항2
+### Assignment 4
+-요구사항1
+-요구사항2
 
 | <div style="width:100px">이름</div> | 의견 |
 | :---: | --- |
@@ -301,31 +305,14 @@ project-root/
 
 **👑 Best Practice**
 
-- bestPractice
-  
-<br>
+-bestPracticeExample
 
-### Assignment 5 
-- 요구사항1
-- 요구사항2
-
-| <div style="width:100px">이름</div> | 의견 |
-| :---: | --- |
-| 김진현 |  |
-| 박정민 |  |
-| 윤다솜 |  |
-| 이기석 |  |
-| 이도하 |  |
-
-**👑 Best Practice**
-
-- bestPractice
 
 <br>
 
-### Assignment 6 
-- 요구사항1
-- 요구사항2
+### Assignment 5
+-요구사항1
+-요구사항2 
 
 | <div style="width:100px">이름</div> | 의견 |
 | :---: | --- |
@@ -337,30 +324,14 @@ project-root/
 
 **👑 Best Practice**
 
-- bestPractice
-<br>
+-bestPracticeExample
 
-### Assignment 7 
-- 요구사항1
-- 요구사항2
-
-| <div style="width:100px">이름</div> | 의견 |
-| :---: | --- |
-| 김진현 |  |
-| 박정민 |  |
-| 윤다솜 |  |
-| 이기석 |  |
-| 이도하 |  |
-
-**👑 Best Practice**
-
-- bestPractice
 
 <br>
 
-### Assignment 8 
-- 요구사항1
-- 요구사항2
+### Assignment 6
+-요구사항1
+-요구사항2 
 
 | <div style="width:100px">이름</div> | 의견 |
 | :---: | --- |
@@ -372,4 +343,44 @@ project-root/
 
 **👑 Best Practice**
 
-- bestPractice
+-bestPracticeExample
+
+
+<br>
+
+### Assignment 7
+-요구사항1
+-요구사항2
+
+| <div style="width:100px">이름</div> | 의견 |
+| :---: | --- |
+| 김진현 |  |
+| 박정민 |  |
+| 윤다솜 |  |
+| 이기석 |  |
+| 이도하 |  |
+
+**👑 Best Practice**
+
+-bestPracticeExample
+
+
+
+<br>
+
+### Assignment 8
+-요구사항1
+-요구사항2 
+
+| <div style="width:100px">이름</div> | 의견 |
+| :---: | --- |
+| 김진현 |  |
+| 박정민 |  |
+| 윤다솜 |  |
+| 이기석 |  |
+| 이도하 |  |
+
+**👑 Best Practice**
+
+-bestPracticeExample
+
