@@ -3,8 +3,10 @@ name: CI/CD
 on:
   push:
     branches:
-      - dev
-
+      - main
+    repositories:
+      - upstream/repository-name
+      
 jobs:
   cicd:
     runs-on: ubuntu-latest
