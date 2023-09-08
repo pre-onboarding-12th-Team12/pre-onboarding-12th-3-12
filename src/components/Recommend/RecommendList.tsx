@@ -1,23 +1,36 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { styled } from 'styled-components';
 import RecommendItem from './RecommendItem';
-import { getKeyword } from 'api/search';
 import { Disease } from 'types';
+import { useKeywordContext } from 'context/useKeywordContext';
 
 interface listProps {
   searchList: Disease[];
+  focusIndex: number;
 }
 
-const RecommendList: React.FC<listProps> = ({ searchList }) => {
+const RecommendList: React.FC<listProps> = ({ searchList, focusIndex }) => {
+  const { inputKeyword } = useKeywordContext();
+
   return (
     <StyledUl>
       <li>
         <StyledP>추천 검색어</StyledP>
       </li>
-      {searchList.length === 0 ? <NoKeyword>검색어 없음</NoKeyword> : null}
-      {searchList.map((item, index) => {
-        return <RecommendItem key={item.sickCd} disease={item} />;
-      })}
+      {searchList.length === 0 || !inputKeyword ? (
+        <NoKeyword>검색어 없음</NoKeyword>
+      ) : (
+        searchList.map((item, index) => {
+          const isFocused = index === focusIndex;
+          return (
+            <RecommendItem
+              key={item.sickCd}
+              disease={item}
+              $isFocused={isFocused}
+            />
+          );
+        })
+      )}
     </StyledUl>
   );
 };
