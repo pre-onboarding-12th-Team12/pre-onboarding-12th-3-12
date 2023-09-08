@@ -2,8 +2,13 @@ import React, { useEffect } from 'react';
 import { styled } from 'styled-components';
 import RecommendItem from './RecommendItem';
 import { getKeyword } from 'api/search';
+import { Disease } from 'types';
 
-const RecommendList: React.FC = () => {
+interface listProps {
+  searchList: Disease[];
+}
+
+const RecommendList: React.FC<listProps> = ({ searchList }) => {
   // 데이터 잘 가져오지 확인하는 test code 입니다. 삭제해도 됩니다.
   useEffect(() => {
     const fetchKeyword = async () => {
