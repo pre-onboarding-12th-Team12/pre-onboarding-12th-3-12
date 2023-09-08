@@ -33,7 +33,6 @@ const SearchForm: React.FC = () => {
         console.info('calling api');
         setSearchList(list);
       } else {
-        console.log('get from session');
         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
         const result = JSON.parse(itemlist).data;
         setSearchList(result as Disease[]);
