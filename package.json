@@ -55,6 +55,7 @@
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
+    "@types/lodash": "^4.14.198",
     "@types/react-router-dom": "^5.3.3",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
