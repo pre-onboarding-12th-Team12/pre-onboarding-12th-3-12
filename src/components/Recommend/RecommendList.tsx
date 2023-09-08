@@ -9,24 +9,15 @@ interface listProps {
 }
 
 const RecommendList: React.FC<listProps> = ({ searchList }) => {
-  // 데이터 잘 가져오지 확인하는 test code 입니다. 삭제해도 됩니다.
-  useEffect(() => {
-    const fetchKeyword = async () => {
-      const datas = await getKeyword('암');
-      console.log(datas);
-    };
-    fetchKeyword();
-  }, []);
-
   return (
     <StyledUl>
       <li>
         <StyledP>추천 검색어</StyledP>
       </li>
-      {/* length 0 일때 사용 */}
-      <NoKeyword>검색어 없음</NoKeyword>
-      {/* map으로 렌더링 */}
-      <RecommendItem />
+      {searchList.length === 0 ? <NoKeyword>검색어 없음</NoKeyword> : null}
+      {searchList.map((item, index) => {
+        return <RecommendItem key={item.sickCd} disease={item} />;
+      })}
     </StyledUl>
   );
 };
