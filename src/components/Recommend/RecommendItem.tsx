@@ -13,7 +13,6 @@ const RecommendItem: React.FC<RecommendItemProps> = ({
   disease,
   $isFocused,
 }) => {
-const RecommendItem: React.FC<RecommendItemProps> = ({ disease }) => {
   const { inputKeyword } = useKeywordContext();
 
   return (
