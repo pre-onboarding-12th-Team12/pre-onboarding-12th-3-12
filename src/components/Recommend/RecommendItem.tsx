@@ -1,28 +1,35 @@
 import React from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
-import { styled } from 'styled-components';
+import { css, styled } from 'styled-components';
 import { Disease } from 'types';
 type RecommendItemProps = {
   disease: Disease;
+  $isFocused: boolean;
 };
-const RecommendItem: React.FC<RecommendItemProps> = ({ disease }) => {
+const RecommendItem: React.FC<RecommendItemProps> = ({
+  disease,
+  $isFocused,
+}) => {
   return (
-    <StyledItem>
+    <StyledItem $isFocused={$isFocused}>
       <AiOutlineSearch size="34" />
       <StyledButton>{disease.sickNm}</StyledButton>
     </StyledItem>
   );
 };
 
-const StyledItem = styled.li`
+const StyledItem = styled.li<{ $isFocused: boolean }>`
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 20px;
 
-  // TODO select 되었을 때 css로 넣기
-  /* background-color: var(--gray-100);
-  border-radius: 10px; */
+  ${props =>
+    props.$isFocused &&
+    css`
+      background-color: var(--gray-100);
+      border-radius: 10px;
+    `}
 `;
 
 const StyledButton = styled.button`
