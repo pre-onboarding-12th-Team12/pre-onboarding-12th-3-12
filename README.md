@@ -215,7 +215,6 @@ project-root/
 <img src="https://img.shields.io/badge/Typescript-blue?style=square&logo=typescript&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?style=square&logo=React&logoColor=black"/> <img src="https://img.shields.io/badge/Axios-56347C?style=square&logo=Axios&logoColor=white"/> <img src="https://img.shields.io/badge/styledcomponents-DB7093?style=square&logo=styled-components&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=square&logo=GitHub&logoColor=white"/> <img src="https://img.shields.io/badge/Amazon Amplify-569A31?style=square&logo=Amazon S3&logoColor=white"/>
 
 <br>
-<br>
 
 # 👑 Best Practice
 
@@ -270,7 +269,8 @@ project-root/
 - lodash 라이브러리의 debounce 메서드를 사용하여, search input의 change event가 발생한 후 1초 뒤 api 호출
 - 무분별한 api 호출을 막기위해 검색어 Value를 유효성 체크하고 유효성 체크를 통과하면 api호출
 
-  <br>
+
+ <br>
 
 ### Assignment 3. 키보드만으로 추천 검색어들로 이동 가능하도록 구현
 
@@ -283,6 +283,7 @@ project-root/
 |               윤다솜                | event.key의 값으로 추천 검색어 li의 index 이동                                                                                                                      |
 |               이기석                | event.key를 이용하여 방향키 값 가져오기                                                                                                                             |
 |               이도하                | event.key의 case에 따라 index값 변경, 변경된 값은 selectedIndex에 저장<br/>해당 data item의 index와 같은지 비교 후 같다면 focus되고 enter를 누를 경우 검색으로 이동 |
+
 
 <br />
 
@@ -304,6 +305,8 @@ project-root/
 |               윤다솜                | 검색어 데이터의 길이가 0이면 ‘검색어 없음’ 표출                          |
 |               이기석                | 검색어 데이터의 길이가 0이고 검색어를 작성하지 않으면 ‘검색어 없음’ 표출 |
 |               이도하                | 검색어 데이터의 길이가 0이라면 검색어 없음 표출                          |
+
+
 
 <br />
 

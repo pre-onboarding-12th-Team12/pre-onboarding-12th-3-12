@@ -6,7 +6,7 @@ on:
       - main
     repositories:
       - upstream/repository-name
-      
+
 jobs:
   cicd:
     runs-on: ubuntu-latest

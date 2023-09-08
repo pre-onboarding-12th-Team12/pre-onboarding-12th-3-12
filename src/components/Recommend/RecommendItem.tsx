@@ -1,12 +1,15 @@
 import React from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { styled } from 'styled-components';
-
-const RecommendItem: React.FC = () => {
+import { Disease } from 'types';
+type RecommendItemProps = {
+  disease: Disease;
+};
+const RecommendItem: React.FC<RecommendItemProps> = ({ disease }) => {
   return (
     <StyledItem>
       <AiOutlineSearch size="34" />
-      <StyledButton>뿅</StyledButton>
+      <StyledButton>{disease.sickNm}</StyledButton>
     </StyledItem>
   );
 };
