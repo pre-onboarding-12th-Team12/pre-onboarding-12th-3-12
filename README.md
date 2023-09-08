@@ -63,9 +63,8 @@
 
 ## 🔗 배포 링크
 
-https://www.naver.com/
+![구현영상](https://github.com/pre-onboarding-12th-Team12/pre-onboarding-12th-3-12/assets/35252854/5d1cf0d6-10d9-49fa-b84b-a8ae1dc5affd)
 
-![image](https://github.com/pre-onboarding-12th-Team12/pre-onboarding-12th-2-12/assets/107299502/83a1b323-0752-469b-abc8-ea119ab43b3c)
 
 <br>
 
