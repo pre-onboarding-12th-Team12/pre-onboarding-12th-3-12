@@ -2,14 +2,19 @@ import React from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { styled } from 'styled-components';
 import { Disease } from 'types';
+import { MarkText } from 'utils/mark';
+import { useKeywordContext } from 'context/useKeywordContext';
 type RecommendItemProps = {
   disease: Disease;
 };
 const RecommendItem: React.FC<RecommendItemProps> = ({ disease }) => {
+  const { inputKeyword } = useKeywordContext();
   return (
     <StyledItem>
       <AiOutlineSearch size="34" />
-      <StyledButton>{disease.sickNm}</StyledButton>
+      <StyledButton>
+        {MarkText({ text: disease.sickNm, targetWord: inputKeyword })}
+      </StyledButton>
     </StyledItem>
   );
 };
