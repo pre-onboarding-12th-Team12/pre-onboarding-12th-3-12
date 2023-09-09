@@ -1,7 +1,7 @@
 import App from 'App';
 import { createBrowserRouter } from 'react-router-dom';
 import SearchHome from 'pages/SearchHome';
-
+import { KeywordProvider } from 'context/useKeywordContext';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -9,7 +9,11 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <SearchHome />,
+        element: (
+          <KeywordProvider>
+            <SearchHome />
+          </KeywordProvider>
+        ),
       },
     ],
   },
