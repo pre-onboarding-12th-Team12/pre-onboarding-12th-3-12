@@ -1,27 +1,36 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { styled } from 'styled-components';
 import RecommendItem from './RecommendItem';
-import { getKeyword } from 'api/search';
+import { Disease } from 'types';
+import { useKeywordContext } from 'context/useKeywordContext';
 
-const RecommendList: React.FC = () => {
-  // 데이터 잘 가져오지 확인하는 test code 입니다. 삭제해도 됩니다.
-  useEffect(() => {
-    const fetchKeyword = async () => {
-      const datas = await getKeyword('암');
-      console.log(datas);
-    };
-    fetchKeyword();
-  }, []);
+interface listProps {
+  searchList: Disease[];
+  focusIndex: number;
+}
+
+const RecommendList: React.FC<listProps> = ({ searchList, focusIndex }) => {
+  const { inputKeyword } = useKeywordContext();
 
   return (
     <StyledUl>
       <li>
         <StyledP>추천 검색어</StyledP>
       </li>
-      {/* length 0 일때 사용 */}
-      <NoKeyword>검색어 없음</NoKeyword>
-      {/* map으로 렌더링 */}
-      <RecommendItem />
+      {searchList.length === 0 || !inputKeyword ? (
+        <NoKeyword>검색어 없음</NoKeyword>
+      ) : (
+        searchList.map((item, index) => {
+          const isFocused = index === focusIndex;
+          return (
+            <RecommendItem
+              key={item.sickCd}
+              disease={item}
+              $isFocused={isFocused}
+            />
+          );
+        })
+      )}
     </StyledUl>
   );
 };
